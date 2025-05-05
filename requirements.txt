@@ -1,0 +1,5 @@
+influxdb-client>=1.48.0
+pimoroni-bme280>=1.1.0
+enviroplus>=1.0.2
+RPi.GPIO>=0.7.1
+smbus>=1.1.post2

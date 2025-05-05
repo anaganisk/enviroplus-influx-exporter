@@ -1,0 +1,14 @@
+[Unit]
+Description=Enviroplus-exporter service
+After=network.target
+
+[Service]
+User=saikiran
+Group=saikiran
+WorkingDirectory=/usr/src/enviroplus_influxdb
+EnvironmentFile=/usr/src/enviroplus_influxdb/contrib/.env
+ExecStart=python /usr/src/enviroplus_influxdb/influxdb_exporter.py
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
