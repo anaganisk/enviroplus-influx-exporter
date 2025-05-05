@@ -1,7 +1,7 @@
  ## Getting Started
 
-To get the prometheus enviroplus-influx-exporter up and running I'm assuming you already have Prometheus and Grafana running somewhere. 
-***Note***: I wouldn't recommend running Prometheus on a Raspberry Pi (using a local SD card) as this could drastically reduce the lifetime of the SD card as samples are written quite often to disk.
+To get the influx enviroplus-influx-exporter up and running I'm assuming you already have influx running somewhere. 
+***Note***: I wouldn't recommend running influx on a Raspberry Pi (using a local SD card) as this could drastically reduce the lifetime of the SD card as samples are written quite often to disk.
 
 ### Prerequisites
 
@@ -54,9 +54,17 @@ sudo systemctl status enviroplus-influx-exporter
 sudo systemctl enable enviroplus-influx-exporter
 ```
 
+## Acknowledgements
+Inspired by [enviroplus_exporter](https://github.com/sighmon/enviroplus_exporter)
 
 
 <!-- LICENSE -->
 ## License
+### MIT
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Distributed under the MIT License. See `LICENSE` for more information.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
